@@ -5,6 +5,12 @@ class Gn < Formula
   sha256 "1b2383128125fee4f79f549a91fd65782adbe3a89cdb793ec3069403b24388bd"
   head "https://github.com/sfiera/gn.git"
 
+  bottle do
+    root_url "https://github.com/sfiera/homebrew-gn/releases/download/v0.0.1792/"
+    cellar :any_skip_relocation
+    sha256 "198134b89a03a7fe0c6a3af6997af07768ca0064d6e519ca18370f58ef66c584" => :catalina
+  end
+
   depends_on "ninja" => :build
 
   def install
