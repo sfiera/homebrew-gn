@@ -7,8 +7,7 @@ class Gn < Formula
 
   bottle do
     root_url "https://github.com/sfiera/homebrew-gn/releases/download/v0.0.1792/"
-    cellar :any_skip_relocation
-    sha256 "198134b89a03a7fe0c6a3af6997af07768ca0064d6e519ca18370f58ef66c584" => :catalina
+    sha256 cellar: :any_skip_relocation, catalina: "198134b89a03a7fe0c6a3af6997af07768ca0064d6e519ca18370f58ef66c584"
   end
 
   depends_on "ninja" => :build
